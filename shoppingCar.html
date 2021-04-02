@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script type="text/javascript">
+			function drag(e) 
+			{
+				e.dataTransfer.effectAllowed = "copy";
+				e.dataTransfer.setData("text", e.target.id); //IE兼容写法
+				//	e.dataTransfer.setData("text/plain",e.target.id);   //标准写法
+			}
+			
+			function drop(e) 
+			{
+				var data = e.dataTransfer.getData("text");
+				e.dataTransfer.dropEffect = "copy";
+				if(e.target.tagName == "DIV") 
+				{
+					e.target.appendChild(document.getElementById(data).cloneNode());
+				} else if(e.target.tagName == "IMG") {
+					e.target.parentNode.appendChild(document.getElementById(data).cloneNode());
+				}
+				allowDrop(e);
+			}
+			function allowDrop(e) 
+			{
+				e.preventDefault();
+				e.stopPropagation();
+			}
+		</script>
+	<style type="text/css">
+		body{
+			background: url(img/tudali/tudali_body.png);
+		}
+		.goodsList{
+			width:450px;
+			border: 2px solid red;
+			height:400px;
+			float:left;
+			margin-left: 150px;
+		}
+		.shoppingCart{
+			width:450px;
+			height:400px;
+			border: 2px solid red;
+			float:left;
+			margin-left: 50px;
+		}
+		div img{
+			width:100px;
+			height:85px;
+			margin:3px;
+		}
+		#emptyDiv{
+			width:50px;
+			height:50px;
+		}
+		a{
+				text-decoration: none;
+				color: #000;
+			}
+			a:hover{
+				color:blue;
+				text-decoration:none;
+			}
+			a.white{
+				color:#fff;
+				text-decoration:none;
+			}
+			a.white:hover{
+				color:#ff0;
+				text-decoration:none;
+			}
+	</style>
+  </head>
+  <body>
+  	<table width="100%">
+			<tr>
+				<td>
+					<table align="center" width="1200">
+						<tr>
+							<td class="padding-top">
+								<img src="img/star.jpg">收藏 | HI，欢迎订购 ！
+								<a href="login.html" id="onloaded">[请登录]</a>
+								<a href="register.html" >[免费注册]</a>
+							</td>
+							<td id="exit">&nbsp;</td>
+							<td align="right">
+								<a href="404Another.html" target="_top"> &nbsp;客户服务</a>
+								<img src="img/arrow.gif" ><a href="404Another.html" target="_top"> &nbsp;网站导航</a>
+								<img src="img/arrow.gif" > &nbsp;
+								<span>
+									<img src="img/shoppingcart.png" >
+									<span><a href="shoppingCar.html" target="centerFrame">购物车</a></span>
+									<span>0</span>
+									<span>件</span>
+									<img src="img/arrow.gif">&nbsp;
+								</span>
+							</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+		</table>
+		<table align="center" width="">
+			<tr>
+				<td>
+					<a href="#" >
+						<img src="img/logo.jpg">
+					</a>
+				</td>
+				<td width="50">&nbsp;</td>
+				<td align="right">
+					<img src="img/banner.jpg" alt="photos" />
+				</td>
+			</tr>
+		</table>
+		<table width="100%">
+			<tr>
+				<td>
+					<table width="1250" align="center">
+						<tr>
+							<td width="250">&nbsp;</td>
+							<td align="center" width="100"><a href="index.html">首页</a></td>
+							<td align="center" width="100"><a href="food.html">美食</a></td>
+							<td align="center" width="100"><a href="foodDetail.html">今日推荐</a></td>
+							<td align="center" width="100"><a href="tudali.html">今日特价</a></td>
+							<td align="center" width="100"><a href="404Another.html">身边外卖</a></td>
+							<td align="center" width="100"><a href="404Another.html">休闲娱乐</a></td>
+							<td align="center" width="100"><a href="404Another.html">生活服务</a></td>
+							<td align="center" width="250">&nbsp;</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+		</table>
+	<div class="goodsList" ondrop="drop(event)" ondragover="allowDrop(event)">
+    	<h2 align="center">商品列表</h2><hr/>
+    	<script type="text/javascript">
+    		var images=["<img src='img/tudali/car1.jpg' id='img1' draggable='true' ondragstart='drag(event)'/>",
+    					"<img src='img/tudali/car2.jpg' id='img2' draggable='true' ondragstart='drag(event)'/>",
+						"<img src='img/tudali/car3.jpg' id='img3' draggable='true' ondragstart='drag(event)'/>",
+						"<img src='img/tudali/car4.jpg' id='img4' draggable='true' ondragstart='drag(event)'/>",
+						"<img src='img/tudali/car5.jpg' id='img5' draggable='true' ondragstart='drag(event)'/>",
+						"<img src='img/tudali/car6 .jpg' id='img6' draggable='true' ondragstart='drag(event)'/>",
+    					"<img src='img/tudali/car7.jpg' id='img7' draggable='true' ondragstart='drag(event)'/>",
+    					"<img src='img/tudali/car8.jpg' id='img8' draggable='true' ondragstart='drag(event)'/>",
+    					"<img src='img/tudali/car9.jpg' id='img9' draggable='true' ondragstart='drag(event)'/>",
+    					"<img src='img/tudali/car10.jpg' id='img10' draggable='true' ondragstart='drag(event)'/>",
+    					"<img src='img/tudali/car11.jpg' id='img11' draggable='true' ondragstart='drag(event)'/>",
+    					"<img src='img/tudali/car12.jpg' id='img12' draggable='true' ondragstart='drag(event)'/>",];
+    		for(var i=0;i<images.length;i++)
+    		{
+    			document.write(images[i]);
+    		}
+    	</script>
+    </div>
+    <div class="shoppingCart" ondrop="drop(event)" ondragover="allowDrop(event)">
+    	<h2 align="middle">购物车</h2><hr/>
+    </div>
+  </body>
+
+</html>

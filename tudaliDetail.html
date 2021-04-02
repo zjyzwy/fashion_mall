@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<style type="text/css">
+			body{
+				background: url(img/tudali/tudali_body.png);
+			}
+			button{
+				height: 35px;
+				width: 50px;
+			}
+			input{
+				width: 800px;
+			}
+			button{
+				width:113px;
+				height:38px; 
+				background:url(../img/buttonbg.png) no-repeat; 
+				font-size:18px; 
+				color:black;
+			}
+			video{
+				height:450px;
+				width:800px; 
+			}
+		</style>
+		<script type="text/javascript">
+		/*
+		 * 该段代码用于实时显示播放进度，由于与拖拉功能有冲突便舍弃
+			setInterval("change()");
+			function change()
+			{
+				var myVideo=document.getElementById("myVideo");
+				document.getElementById("prog").value=myVideo.currentTime*100/myVideo.duration;
+			}
+		*/
+			function playPause()
+			{
+				var myVideo=document.getElementById("myVideo");
+				var myButton=document.getElementById("btn1");
+				if(myVideo.paused)
+				{
+					myVideo.play();
+					myButton.innerHTML="暂停";
+				}
+				else
+				{
+					myVideo.pause();
+					myButton.innerHTML="播放";
+				}
+			}
+			function mutedPlay()
+			{
+				var myVideo=document.getElementById("myVideo");
+				var myButton=document.getElementById("btn2");
+				if(!myVideo.muted)
+				{
+					myVideo.muted=true;
+					myButton.innerHTML="发声";
+				}
+				else
+				{
+					myVideo.muted=false;
+					myButton.innerHTML="静音";
+				}
+			}
+			function full()
+			{
+				var myVideo=document.getElementById("myVideo");
+				myVideo.requestFullscreen();     //框架集内全屏功能无法用
+			}
+			function progress()
+			{
+				var myVideo=document.getElementById("myVideo");
+				var myProgress=document.getElementById("prog").value;
+				myVideo.currentTime=myVideo.duration/100*myProgress;
+				myVideo.play();
+			}
+		</script>
+	</head>
+	<body>
+		<div align="center">
+			<video id="myVideo" controls="controls">
+				<source src="http://www.tudali.com/image/cookroom.mp4" type="video/mp4"></source>  <!--   该视频无声音   -->
+			</video>
+			<br />
+			&nbsp;<button onclick="playPause()" id="btn1">播放</button>&nbsp;
+			&nbsp;<button onclick="mutedPlay()" id="btn2">静音</button>&nbsp;
+			&nbsp;<button onclick="full()" id="btn3">全屏</button>&nbsp;
+			<br />
+			<input type="range" id="prog" min="0" max="100" value="0" onchange="progress()"/>
+		</div>
+	</body>
+</html>

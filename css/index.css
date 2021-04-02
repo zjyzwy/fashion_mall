@@ -1,0 +1,104 @@
+*{
+	font-size: 17px;
+}
+body{
+	font-size:25px;
+	font-family:"微软雅黑";
+	margin:0;
+}
+a{
+	text-decoration: none;
+	color: #000;
+}
+a:hover{
+	color:deepskyblue;
+	text-decoration:none;
+}
+a.white{
+	color:#fff;
+	text-decoration:none;
+}
+a.white:hover{
+	color:#ff0;
+	text-decoration:none;
+}
+img{
+	border:none;
+}
+table tr th{
+	font-size: 20px;
+	text-align: left;
+	height: 36px;
+	background: url(../img/left_navbg.jpg);
+}
+table tr td{
+	height:30px;
+	font-size:16px;
+	text-align: left;
+}
+.orange{
+	font-weight:700;
+	color:#f60;
+}
+.indexTop{
+	font-size:16px;
+	font-weight:700;
+}
+.span{
+	font-size:25px;
+	margin-right:8px;
+	width:15px;
+	height:10px;
+	display:inline-block;
+}
+.guess{
+	color:green;
+	float: right;
+}
+.dtName{
+	float: left;
+}
+.dtCenter{
+	text-align: center;
+}
+.prices{
+	color: red;
+	float: right;
+}
+.font12{
+	float: left;
+	font-size: 16px;
+	color: black;
+}
+.buyers{
+	color: #FF6600;
+	float: left;
+}
+.focusBox{
+	position: absolute;
+	top: 500px;
+	width: 120px;
+	left: 49%;
+	margin-left: -170px;
+	list-style: none;
+}
+.focusBox li {
+        float: left;
+        margin-right: 10px;
+        width: 20px;
+        height: 20px;
+        border-radius: 10px;
+        background: dodgerblue;
+        cursor: pointer;
+}
+.focusBox li.cur {
+    background: #f60;
+    opacity: 0.6;
+    filter: alpha(opacity=60);
+}
+.table{
+	border-style: solid;
+	border-color: limegreen;
+	border-width: 1px;
+	height: 10px;
+}

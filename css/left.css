@@ -1,0 +1,28 @@
+body{
+	font-size: 25px;
+	font-family: "宋体";
+	background: url(../img/tudali/tudali_body.png);
+}
+a{
+	text-decoration: none;
+	color: black;
+}
+a:hover{
+	color:blue;
+	text-decoration:none;
+}
+ul li{
+	text-align: right;
+	margin:12px;
+	padding:3px;
+	list-style:none;
+}
+.tab_active{
+	border-top:3px solid red;
+	width:130px;
+	font-weight:700;
+	background:#f2f2f2;
+	border-right:1px solid #ccc;
+	text-align: center;
+	border-left:1px solid #ccc;
+}

@@ -1,0 +1,76 @@
+body{
+	font-family:"微软雅黑";
+	margin:0;
+	color:#000;
+	background: url(../img/light.png);
+}
+a{
+	text-decoration: none;
+	color: #000;
+}
+a:hover{
+	color:blue;
+	text-decoration:none;
+}
+a.white{
+	color:#fff;
+	text-decoration:none;
+}
+a.white:hover{
+	color:#ff0;
+	text-decoration:none;
+}
+img{
+	border:none;
+}
+input{
+	width: 332px;
+	height: 26px;
+}
+
+form table tr td{
+	text-align: right;
+	font-size: 22px;
+}
+ul,li{
+	display:block;
+	margin:0;
+	padding:0;
+	list-style:none;
+	font-size: 25px;
+}
+.button{
+	width:113px;
+	height:38px; 
+	background:url(../img/buttonbg.png) no-repeat; 
+	font-size:18px; 
+	color:white;
+}
+
+.logintop span{
+	line-height:47px;  
+	text-indent:24px; 
+	float:left;
+}
+.logintop ul{
+	float:right; 
+	padding-right:30px;
+}
+.logintop ul li{
+	float:left; 
+	margin-left:20px; 
+	line-height:47px;
+}
+.hello{
+	height:40px; 
+	font-size: 25px;
+}
+.loginbm{
+	height:50px; 
+	line-height:50px; 
+	text-align:center;
+	font-size: 25px; 
+	position:absolute; 
+	bottom:0px; 
+	width:100%; 
+}

@@ -1,0 +1,89 @@
+*{
+	font-size: 17px;
+}
+body{
+	font-size:25px;
+	font-family:"微软雅黑";
+	margin:0;
+	color:#000;
+}
+a{
+	text-decoration: none;
+	color: #000;
+}
+a:hover{
+	color:deepskyblue;
+	text-decoration:none;
+}
+a.white{
+	color:#fff;
+	text-decoration:none;
+}
+a.white:hover{
+	color:#ff0;
+	text-decoration:none;
+}
+.table{
+	padding-top: 100px;
+}
+table tr th{
+	font-size: 20px;
+	text-align: left;
+	height: 36px;
+	background: url(../img/left_navbg.jpg);
+}
+table tr td{
+	height:30px;
+	font-size:16px;
+	text-align: left;
+}
+li{
+	float:left;
+	padding-right:20px;
+	list-style-type: none;
+}
+.orange{
+	font-weight:700;
+	color:#f60;
+}
+.indexTop{
+	font-size:16px;
+	font-weight:700;
+}
+.guess{
+	color:green;
+	float: right;
+}
+.guessBig{
+	font-size: 25px;
+	color:green;
+	float: right;
+}
+.span{
+	font-size:25px;
+	margin-right:8px;
+	text-indent: center;
+	width:15px;
+	height:10px;
+	display:inline-block;
+}
+.dtName{
+	float: left;
+}
+.dtCenter{
+	text-align: center;
+	background-color: lavender;
+}
+.prices{
+	color: red;
+	float: right;
+}
+.font12{
+	float: left;
+	font-size: 16px;
+	color: orange;
+}
+.buyers{
+	color: #FF6600;
+	float: right;
+}

@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>美食</title>
+		<link rel="stylesheet" href="css/food.css" media="all" />
+	</head>
+	<script type="text/javascript">
+		window.onload=function()
+		{
+			if(localStorage.getItem("userNames"))
+		    {
+		    	document.getElementById("onloaded").innerHTML="&nbsp;"+localStorage.getItem("userNames")+"&nbsp;";
+		    	document.getElementById("onloaded").style="font-size:30px;";
+		    }
+		}
+	</script>
+	<body background="img/main_bg.jpg">
+		<table width="100%">
+			<tr>
+				<td>
+					<table align="center" width="1200">
+						<tr>
+							<td class="padding-top">
+								<img src="img/star.jpg">收藏 | HI，欢迎订购 ！
+								<a href="login.html" id="onloaded" class="orange">[请登录]</a>
+								<a href="register.html" class="orange">[免费注册]</a>
+							</td>
+							<td align="right">
+								<a href="404Another.html" target="_top"> &nbsp;客户服务</a>
+								<img src="img/arrow.gif" ><a href="404Another.html" target="_top"> &nbsp;网站导航</a>
+								<img src="img/arrow.gif" > &nbsp;
+								<span>
+									<img src="img/shoppingcart.png" >
+									<span><a href="shoppingCar.html" target="centerFrame">购物车</a></span>
+									<span class="orange">0</span>
+									<span>件</span>
+									<img src="img/arrow.gif">&nbsp;
+								</span>
+							</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+		</table>
+		<table align="center" width="">
+			<tr>
+				<td>
+					<img src="img/logo.jpg">
+				</td>
+				<td align="right">
+					<img src="img/banner.jpg" alt="photos" />
+				</td>
+			</tr>
+		</table>
+		<table width="100%" bgcolor="darkorange" cellspacing="0" cellpadding="0">
+			<tr>
+				<td>
+					<table width="1250" align="center" class="indexTop">
+						<tr>
+							<td width="350">&nbsp;</td>
+							<td align="center" width="100"><a href="index.html" class="white">首页</a></td>
+							<td align="center" width="100"><a href="food.html" class="white">美食</a></td>
+							<td align="center" width="100"><a href="foodDetail.html" class="white">今日推荐</a></td>
+							<td align="center" width="100"><a href="tudali.html" class="white">今日特价</a></td>
+							<td align="center" width="100"><a href="404Another.html" class="white">身边外卖</a></td>
+							<td align="center" width="100"><a href="404Another.html" class="white">休闲娱乐</a></td>
+							<td align="center" width="100"><a href="404Another.html" class="white">生活服务</a></td>
+							<td align="center" width="250">&nbsp;</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+		</table>
+		<table align="center">
+			<tr>
+				<td valign="top">
+					<table border="0" style="margin-right: 20px;">
+						<tr>
+							<th>按分类</th>
+						</tr>
+						<tr>
+							<td>
+								<span class="span"><img src="img/red_dot.gif" ></span><a href="#">火锅</a><img src="img/arrow_r.jpg" alt="arrow" align="right"/>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<span class="span"><img src="img/red_dot.gif" ></span><a href="#">日式料理</a><img src="img/arrow_r.jpg" alt="arrow" align="right"/>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<span class="span"><img src="img/red_dot.gif" ></span><a href="#">西餐</a><img src="img/arrow_r.jpg" alt="arrow" align="right"/>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<span class="span"><img src="img/red_dot.gif" ></span><a href="#">自助餐</a><img src="img/arrow_r.jpg" alt="arrow" align="right"/>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<span class="span"><img src="img/red_dot.gif" ></span><a href="#">小吃快餐</a><img src="img/arrow_r.jpg" alt="arrow" align="right"/>
+							</td>
+						<tr>
+						</tr>
+						<tr>
+							<th>按地区</th>
+						</tr>
+						<tr>
+							<td>
+								<span class="span"><img src="img/red_dot.gif" ></span><a href="#">禅城区</a><img src="img/arrow_r.jpg" alt="arrow" align="right"/>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<span class="span"><img src="img/red_dot.gif" ></span><a href="#">南海区</a><img src="img/arrow_r.jpg" alt="arrow" align="right"/>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<span class="span"><img src="img/red_dot.gif" ></span><a href="#">顺德区</a><img src="img/arrow_r.jpg" alt="arrow" align="right"/>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<span class="span"><img src="img/red_dot.gif" ></span><a href="#">三水区</a><img src="img/arrow_r.jpg" alt="arrow" align="right"/>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<span class="span"><img src="img/red_dot.gif" ></span><a href="#">高明区</a><img src="img/arrow_r.jpg" alt="arrow" align="right"/>
+							</td>
+						</tr>
+						<tr>
+							<th>按人数</th>
+						</tr>
+						<tr>
+							<td>
+								<span class="span"><img src="img/red_dot.gif" ></span><a href="#">单人餐</a><img src="img/arrow_r.jpg" alt="arrow" align="right"/>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<span class="span"><img src="img/red_dot.gif" ></span><a href="#">双人餐</a><img src="img/arrow_r.jpg" alt="arrow" align="right"/>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<span class="span"><img src="img/red_dot.gif" ></span><a href="#">3-4人</a><img src="img/arrow_r.jpg" alt="arrow" align="right"/>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<span class="span"><img src="img/red_dot.gif" ></span><a href="#">5-6人</a><img src="img/arrow_r.jpg" alt="arrow" align="right"/>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<span style="font-size: 20px;"><img src="img/line.jpg" align="center"/>猜你喜欢</span><span class="prices"><a href="#" class="guess" style="font-size: 20px;">更多&gt;&gt;</a></span>
+								<hr size="2" color="olivedrab"/>
+							</td>
+						</tr>
+						<script type="text/javascript">
+							var names=["阳平肥肠","一块豆腐","善目寸韩国料理店"];
+							var prices=["￥79起","￥52起","￥159起"];
+							var images=["<img src='img/food_show/love1.jpg' />","<img src='img/food_show/love2.jpg' />","<img src='img/food_show/love4.jpg' />"];
+							for(var i=0;i<images.length;i++)
+							{
+								var showLove="<tr><td><span>"+images[i]+"<dt><span class='dtName'>"+names[i]+"</span></dt><dt ><span class='prices'>"+prices[i]+"</span></dt></span></td></tr>";
+								document.write(showLove);
+							}
+						</script>
+					</table>
+				</td>
+				<td valign="top">
+					<table>
+						<tr>
+							<td valign="top">
+								<div>
+										<span style="font-size: 25px;"><img src="img/food_show/icon1.jpg" alt="" align="top"/>&nbsp;&nbsp;美食</span><span style="float: right;"><a href="#" class="guessBig">更多&gt;&gt;</a></span>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td valign="top">
+								<table cellpadding="15" cellspacing="0" border="0">
+									<tr>
+										<script type="text/javascript" >
+											var names=["粥全粥到","土大力休闲餐厅","味为先豆腐脑","望湘园","彤德莱","赛百味"];
+											var prices=["￥85起","￥88起","￥9起","￥90起","￥89起","￥19.9起"];
+											var buyers=["已售1875","已售12455","已售41875","已售4965","已售18875","已售2891"];
+											var images=["ms1.jpg","ms2.jpg","ms3.jpg","ms4.jpg","ms5.jpg","ms6.jpg"];
+											for(var i=0;i<images.length;i++)
+											{
+												var showPhotos="<td><span><img src='img/food_show/"+images[i]+"'/><dt class='dtCenter'><span>"+names[i]+"</span></dt><dt><span class='buyers'>"+buyers[i]+"</span></dt><dt><span class='font12'>"+prices[i]+"</span></dt></span></td>";
+												document.write(showPhotos);
+												if(i==2)
+													document.write("<tr></tr>");
+											}
+										</script>
+									</tr>
+								</table>
+							</td>
+						</tr>
+						<tr>
+							<td valign="top">
+								<div>
+										<br />
+										<span style="font-size: 25px;"><img src="img/food_show/icon2.jpg" alt="" align="top"/>&nbsp;&nbsp;休闲娱乐</span><span style="float: right;"><a href="#" class="guessBig">更多&gt;&gt;</a></span>
+								</div>
+							</td>
+						</tr>
+							<td valign="top">
+								<table cellpadding="15" cellspacing="0">
+									<tr>
+										<script type="text/javascript" >
+											var names=["沐青汤泉","首玺池典","良子健身","绿岛汤泉韩式休闲会所","麦度KTV","纽丝温泉洗浴"];
+											var prices=["￥55起","￥48起","￥59起","￥128起","￥89起","￥36起"];
+											var buyers=["已售4455","已售1265","已售23875","已售31875","已售12891","已售2875"];
+											var images=["ms7.jpg","ms8.jpg","ms9.jpg","ms10.jpg","ms11.jpg","ms12.jpg"];
+											for(var i=0;i<images.length;i++)
+											{
+												var showPhotos="<td><span><img src='img/food_show/"+images[i]+"'/><dt class='dtCenter'><span>"+names[i]+"</span></dt><dt><span class='buyers'>"+buyers[i]+"</span></dt><dt><span class='font12'>"+prices[i]+"</span></dt></span></td>";
+												document.write(showPhotos);
+												if(i==2)
+													document.write("<tr></tr>");
+											}
+										</script>
+									</tr>
+								</table>
+							</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+				<tr>
+					<td colspan="2" valign="top">
+						<div>
+							<br />
+							<span style="font-size: 25px;"><img src="img/food_show/icon3.jpg" alt="" align="top"/>&nbsp;&nbsp;美食促销</span><span style="float: right;"><a href="#" class="guessBig">更多&gt;&gt;</a></span>
+						</div>
+					</td>
+				</tr>
+			<tr>
+				<table align="center" border="0">
+					<tr>
+						<td colspan="8">
+							<hr size="3" color="olivedrab"/>
+						</td>
+					</tr>
+					<tr>
+						<td colspan="2">
+							<div align="center">
+									<script>
+										var names=["鱼酷活鱼现烤","乐伯部队锅","板长寿司","旺池川菜","风物寿司","五月罗马海鲜自助餐厅"];
+										var prices=["￥88起","￥108起","￥90起","￥90起","￥90起","￥99起"];
+										var buyers=["已售31265","已售11263","已售18864","已售10043","已售263","已售1568"];
+										var myimgs=["<img src='img/food_show/cuxiao1.jpg'/>","<img src='img/food_show/cuxiao2.jpg'/>","<img src='img/food_show/cuxiao3.jpg'/>",
+										            "<img src='img/food_show/cuxiao4.jpg'/>","<img src='img/food_show/cuxiao5.jpg'/>","<img src='img/food_show/cuxiao6.jpg'/>"];
+										for(var i=0;i<names.length;i++)
+										{
+											showphotos="<td>"+myimgs[i]+"<dt>"+names[i]+"</dt><dt><span class='dtName'>"+prices[i]+"</span></dt><dt><span class='prices'>"+buyers[i]+"</span></dt></td>";
+											document.write(showphotos);
+										}
+									</script>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td colspan="8">
+							<hr size="3" color="olivedrab"/>
+						</td>
+					</tr>
+				</table>
+			</tr>
+		</table>
+		<table border="0">
+			<br />
+  			<p align="center" style="font-size: 20px;">Copyright  &nbsp;&nbsp;2018-2022  &nbsp;Q- Walking Fashion E&S &nbsp;&nbsp;阳光在线广场版权所有<Br/>
+    			中国佛山 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;南海区狮山大学城&nbsp;&nbsp;&nbsp;   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;咨询热线：13800138000  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1008611 </p>
+  			<p align="center"><img src="img/foot_pic.jpg" height="65"></p>
+		</table>
+	</body>
+</html>

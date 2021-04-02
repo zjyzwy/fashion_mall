@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			.page-not-found td {
+				font-size: 15em;
+				color: #F0F0F0;
+				text-shadow: 1px 1px 6px #AAA;
+				-moz-text-shadow: 1px 1px 6px #aaa;
+				-webkit-text-shadow: 1px 1px 6px #aaa;
+				-o-text-shadow: 1px 1px 6px #aaa;
+			}
+			body{
+				font-size:18px;
+				font-family:"微软雅黑";
+				margin:0;
+				background: url(img/tudali/tudali_body.png);
+			}
+			a{
+				text-decoration: none;
+				color: #000;
+			}
+			a:hover{
+				color:blue;
+				text-decoration:none;
+			}
+			div img{
+				width:30px;
+				height:35px;
+			}
+		</style>
+	</head>
+	<body>
+		<table width="100%">
+			<tr>
+				<td>
+					<table align="center" width="1200">
+						<tr>
+							<td class="padding-top">
+								<img src="img/star.jpg">收藏 | HI，欢迎订购 ！
+								<a href="login.html" id="onloaded">[请登录]</a>
+								<a href="register.html" >[免费注册]</a>
+							</td>
+							<td id="exit">&nbsp;</td>
+							<td align="right">
+								<a href="404Another.html" target="_top"> &nbsp;客户服务</a>
+								<img src="img/arrow.gif" ><a href="404Another.html" target="_top"> &nbsp;网站导航</a>
+								<img src="img/arrow.gif" > &nbsp;
+								<span>
+									<img src="img/shoppingcart.png" >
+									<span><a href="shoppingCar.html" target="centerFrame">购物车</a></span>
+									<span>0</span>
+									<span>件</span>
+									<img src="img/arrow.gif">&nbsp;
+								</span>
+							</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+		</table>
+		<table align="center" width="">
+			<tr>
+				<td>
+					<img src="img/logo.jpg">
+				</td>
+				<td width="50">&nbsp;</td>
+				<td align="right">
+					<img src="img/banner.jpg" alt="photos" />
+				</td>
+			</tr>
+		</table>
+		<table width="100%">
+			<tr>
+				<td>
+					<table width="1250" align="center">
+						<tr>
+							<td width="250">&nbsp;</td>
+							<td align="center" width="100"><a href="index.html">首页</a></td>
+							<td align="center" width="100"><a href="food.html">美食</a></td>
+							<td align="center" width="100"><a href="foodDetail.html">今日推荐</a></td>
+							<td align="center" width="100"><a href="tudali.html">今日特价</a></td>
+							<td align="center" width="100"><a href="404.html">身边外卖</a></td>
+							<td align="center" width="100"><a href="404.html">休闲娱乐</a></td>
+							<td align="center" width="100"><a href="404.html">生活服务</a></td>
+							<td align="center" width="250">&nbsp;</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+		</table>
+		<div id="mytime" align="right"></div> 
+		<script type="text/javascript">
+			var filePrefix="<img src='img/";
+			var fileSuffix=".jpg'/>";
+			function showTime()
+			{
+				var myDate=new Date();
+				var dateStr=" ";
+				var year=myDate.getFullYear();
+				var month=myDate.getMonth()+1;
+				var date=myDate.getDate();
+				var hour=myDate.getHours();
+				var minute=myDate.getMinutes();
+				var second=myDate.getSeconds();
+				document.getElementById("mytime").innerHTML=dateStr
+																	+num2Image(year)+" <img src='img/year.jpg'  />"
+															        +num2Image(fixTime(month))+"<img src='img/month.jpg'  />"
+															        +num2Image(fixTime(date))+"<img src='img/date.jpg'  />"
+																	+num2Image(fixTime(hour))+"<img src='img/hour.jpg'  />"
+															        +num2Image(fixTime(minute))+"<img src='img/minute.jpg'  />"
+															        +num2Image(fixTime(second))+"<img src='img/second.jpg'  />";
+			}
+			function num2Image(num)
+			{
+				var str=num.toString();
+				var result=" ";
+				for(var i=0;i<str.length;i++)
+				{
+					var c=str.charAt(i);
+					result=result+filePrefix+c+fileSuffix;
+				}
+				return result;
+			}
+			function fixTime(time)
+			{
+				if(time<10)
+				{
+					return "0"+time;
+				}
+				return time;
+			}
+			window.onload=setInterval("showTime()",1000);
+		</script>
+		<table class="page-not-found" align="center" border="0">
+			<tr>
+				<td valign="top" height="0">404</td>
+			</tr>
+		</table>
+		<table border="0">
+			<br />
+  			<p align="center" style="font-size: 20px;">Copyright  &nbsp;&nbsp;2018-2022  &nbsp;Q- Walking Fashion E&S &nbsp;&nbsp;阳光在线广场版权所有<Br/>
+    			中国佛山 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;南海区狮山大学城&nbsp;&nbsp;&nbsp;   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;咨询热线：13800138000  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1008611 </p>
+  			<p align="center"><img src="img/foot_pic.jpg" height="65"></p>
+		</table>
+	</body>
+</html>
